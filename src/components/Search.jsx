@@ -1,8 +1,11 @@
 import React from 'react'
 import { MdSearch } from 'react-icons/md'
-import { IconContext } from "react-icons";
+import { IconContext } from "react-icons"
+// import { useState } from 'react'
 
 function Search() {
+    // const [searchKey, setSearchKey] = useState("")
+    // const [artists, setArtists] = useState([])
     return (
         <div className="flex text-white">
             <IconContext.Provider value={{ color: 'gray' }}>

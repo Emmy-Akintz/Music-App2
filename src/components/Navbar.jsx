@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom'
-import { MdClear, MdDehaze, MdHome, MdLogout, MdMusicNote, MdPerson, MdPlaylistPlay, MdRadio } from 'react-icons/md'
+import { MdClear, MdDehaze, MdHome, MdMusicNote, MdPerson, MdPlaylistPlay, MdRadio } from 'react-icons/md'
 import { IconContext } from 'react-icons'
 
 function Navbar()  {
@@ -57,14 +57,6 @@ function Navbar()  {
                                 <MdPerson className="mr-4" />
                             </IconContext.Provider>
                             <span className="md:hidden lg:hidden">Profile</span>
-                        </Link>
-                    </li>
-                    <li className="mt-4">
-                        <Link to='/logout' className='flex md:block lg:block  hover:text-gray-500 transition-all'>
-                            <IconContext.Provider value={{ color: 'yellow' }}>
-                                <MdLogout className="mr-4" />
-                            </IconContext.Provider>
-                            <span className="md:hidden lg:hidden">Log out</span>
                         </Link>
                     </li>
                 </ul>

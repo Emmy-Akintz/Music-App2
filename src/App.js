@@ -5,7 +5,6 @@ import MusicSearch from './pages/MusicSearch';
 import Radio from './pages/Radio';
 import Playlist from './pages/Playlist';
 import Account from './pages/Account';
-import Logout from './pages/Logout';
 import PlayBar from './components/PlayBar';
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <Route path = '/radio' element={<Radio />} />
         <Route path = '/playlist' element={<Playlist />} />
         <Route path = '/account' element={<Account />} />
-        <Route path = '/logout' element={<Logout />} />
       </Routes>
       <PlayBar />
     </div>
