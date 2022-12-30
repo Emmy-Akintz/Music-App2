@@ -2,6 +2,8 @@ import React from "react";
 // import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+// import axios from "axios";
 
 function Account() {
     const CLIENT_ID = "de0a866d4c4c46d9918f84a0372b4984"
@@ -30,11 +32,18 @@ function Account() {
     }
 
     return (
-        <div className="">
+        <div className="flex p-4 mb-20 bg-gray-800 h-[100vh]">
             <Navbar />
-            {!token ? <button className="text-white font-bold text-xl border-none rounded-xl bg-yellow-400 p-4 hover:bg-yellow-500 transition-all mb-20"><a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Connect Account</a></button> : <button className="text-white font-bold text-xl border-none rounded-xl bg-yellow-400 p-4 hover:bg-yellow-500 transition-all mb-20" onClick={disconnectAcct}>Disconnect Account</button>}
-            <br />
-            <button className="text-white font-bold text-xl border-none rounded-xl bg-yellow-400 p-4 hover:bg-yellow-500 transition-all mb-20" onClick={disconnectAcct}>Disconnect Account</button>
+            <div className="">
+                <h1 className="font-bold m-4 mt-20">EMMY MUSIC APP</h1>
+                <div className="block">
+                    <p className="font-bold">User name: <span className="font-light"></span></p>
+                    <p className="font-bold">User email: <span className="font-light"></span></p>
+                </div>
+                {!token ? <button className="text-white font-bold text-xl border-none rounded-xl bg-yellow-400 py-2 px-4 hover:bg-yellow-500 transition-all m-4"><a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Connect Account</a></button> : <button className="text-white font-bold text-xl border-none rounded-xl bg-yellow-400 py-2 px-4 hover:bg-yellow-500 transition-all m-4" onClick={disconnectAcct}>Disconnect Account</button>}
+                <br />
+                <Link to='/home' className="text-white font-bold text-xl border-none rounded-xl bg-yellow-400 py-2 px-4 hover:bg-yellow-500 transition-all m-4">Home</Link>
+            </div>
         </div>
     )
 }

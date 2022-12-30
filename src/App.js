@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="App bg-gray-800 text-white h-[auto]">
       <Routes>
-        <Route path = '/' element={<Home />} />
+        <Route path = '/home' element={<Home />} />
         <Route path = '/ms' element={<MusicSearch />} />
         <Route path = '/radio' element={<Radio />} />
         <Route path = '/playlist' element={<Playlist />} />
-        <Route path = '/account' element={<Account />} />
+        <Route path = '/' element={<Account />} />
       </Routes>
       <PlayBar />
     </div>

@@ -18,7 +18,7 @@ function Navbar()  {
                 <img src="./images/Logo.png" alt="" className="m-auto hidden lg:block" />
                 <ul className="border-none md:rounded-full lg:rounded-full md:bg-gray-900 lg:bg-gray-900 w-auto md:w-12 lg:w-12 p-4 pb-4 md:p-4 lg:p-4 justify-evenly text-white font-bold md:mt-4 lg:mt-4">
                     <li>
-                        <Link to='/' className='flex md:block lg:block hover:text-gray-500 transition-all'>
+                        <Link to='/home' className='flex md:block lg:block hover:text-gray-500 transition-all'>
                             <IconContext.Provider value={{ color: 'yellow' }}>
                                 <MdHome className="mr-4" />
                             </IconContext.Provider>
@@ -52,7 +52,7 @@ function Navbar()  {
                 </ul>
                 <ul className="border-none md:rounded-full lg:rounded-full md:bg-gray-900 lg:bg-gray-900 w-auto md:w-12 lg:w-12 p-4 md:pt-4 lg:pt-4 pt-0 justify-evenly text-white font-bold md:mt-4 lg:mt-4">
                 <li className="">
-                    <Link to='/account' className='flex md:block lg:block  hover:text-gray-500 transition-all '>
+                    <Link to='/' className='flex md:block lg:block  hover:text-gray-500 transition-all '>
                             <IconContext.Provider value={{ color: 'yellow' }}>
                                 <MdPerson className="mr-4" />
                             </IconContext.Provider>
