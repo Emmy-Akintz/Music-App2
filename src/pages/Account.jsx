@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Account() {
     const CLIENT_ID = "de0a866d4c4c46d9918f84a0372b4984"
-    const REDIRECT_URI = "http://localhost:3000"
+    const REDIRECT_URI = "https://emmymusicapp.netlify.app/"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
     const [token, setToken] = useState("")
